@@ -1,5 +1,5 @@
 # Flanking
-- +1 when attacking from opposite sides
+- Advantage when attacking from opposite sides
 # Inspiration
 - Advantage -> +4 before roll
 - Re-roll before result is said, must accept result of second roll. Second roll cannot be rerolled

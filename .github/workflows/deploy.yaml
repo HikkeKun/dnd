@@ -25,7 +25,10 @@ jobs:
           path: content
           fetch-depth: 1
       - name: Build Quartz
-        run: cd /usr/src/app/ ; npx quartz build -d $GITHUB_WORKSPACE/content -o $GITHUB_WORKSPACE/public
+        run: |
+          cd /usr/src/app/
+          cp $GITHUB_WORKSPACE/content/.quartz/* ./
+          npx quartz build -d $GITHUB_WORKSPACE/content -o $GITHUB_WORKSPACE/public
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
